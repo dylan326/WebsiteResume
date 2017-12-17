@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Thanks!</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="./Scripts/cycle2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./Scripts/bio.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+    </head>
+    <body onload="getCookie()">
+    <span class="navbar">
+        <a href= 'index.html'>Home</a>
+        &nbsp;
+        <a href= 'education.html'>Education</a>
+        &nbsp;
+        <a href='skills.html'>Skills</a>
+        &nbsp;   
+        <a href= 'contact.html'>Contact</a>
+        &nbsp;
+        <hr><hr>
+    </span>
+<br /><br /><br /><br />
+    <center> <h1><b>Message Sent!</b></h1>
+    <p1>Thanks, <p1 id="fname">!</p1> 
+    <br><br>
+    <p1>A confirmation email has been sent to <b><p1 id="txtEmail"></b></p1> 
+    <br><br>
+    <a  href="index.html">  Return to Homepage</a></p>
+   
+<script>
+
+function getCookie()
+  {
+      var cookieArray = document.cookie.split("; ");
+        for(var i=0; i<cookieArray.length; i++)
+        {
+            var nameValueArray = cookieArray[i].split("=")
+                if (nameValueArray[0] == "name") 
+                {
+                    document.getElementById("fname").innerHTML = nameValueArray[1]
+                }
+                if (nameValueArray[0] == "email") 
+                {
+                    document.getElementById("txtEmail").innerHTML = nameValueArray[1]
+                    
+                }
+            
+        }
+  }
+
+
+</script>
+</html>
