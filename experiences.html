@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Skills & Experiences</title>
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS\SkillsStyle.css">
+</head>
+
+<body>
+	
+    <span class="navbar">
+        <a href= 'index.html'>Home</a>
+        &nbsp;
+        <a href= 'education.html'>Education</a>
+      &nbsp;
+        <a href='experiences.html'>Experiences</a>
+        &nbsp;   
+        <a href='skills.html'>Skills</a>
+        &nbsp;
+       <a href= 'contact.html'>Contact</a>
+       &nbsp;
+
+<hr><hr>
+</span>
+
+ <br /><br /><br /><br />
+ 
+         <center> <h1><b>Experiences</b></h1>
+       <h3>Please Enter Your Experiences!</h3>
+       
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 9px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: hand;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+
+</head>
+<body onload="getCookie()">
+
+<div class="container">
+  <form id="form" method="get" action="experienceadded.html"/>
+   <label for="mlist">Please Choose Experience Type</label>
+    <select id="mlist" name="mlist">
+      <option value="work">Work Experiences</option>
+      <option value="tech">Technical Experiences</option>
+    </select>
+    
+    <label for="name">Company:</label>
+    <input type="text" id="exname" name="exname" placeholder="Enter Company Name. . . " required>
+    <label for="name">Title:</label>
+    <input type="text" id="titlename" name="titlename" placeholder="Enter Title Name. . . " required>
+    
+
+    <label for="message">Details</label>
+    <textarea id="subject" name="subject" placeholder="Please describe your job duties and responsibilities here.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Save Experience & Next" onclick="setCookie();" onsubmit="setCookie();">
+  </form>
+</div>
+
+<script> 
+
+function setCookie()
+{
+                    document.cookie = "experience=" + document.getElementById("exname").value;
+                    
+}
+
+//script to make cookie elements populate into the form. Same is being used in the success page. 
+function getCookie()
+  {
+      var cookieArray = document.cookie.split("; ");
+        for(var i=0; i<cookieArray.length; i++)
+        {
+            var nameValueArray = cookieArray[i].split("=")
+                if (nameValueArray[0] == "experience") 
+                {
+                    document.getElementById("exname").value = nameValueArray[1]
+                }
+                
+            
+        }
+  }
+
+
+
+</script> 
+
+
+</body>
+</html> 
+
