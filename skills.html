@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>Skills</title>
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS\SkillsStyle.css">
+</head>
+
+<body>
+	
+    <span class="navbar">
+        <a href= 'index.html'>Home</a>
+        &nbsp;
+        <a href= 'education.html'>Education</a>
+      &nbsp;
+         <a href='experiences.html'>Experiences</a>
+        &nbsp;
+        <a href='skills.html'>Skills</a>
+        &nbsp;
+       <a href= 'contact.html'>Contact</a>
+       &nbsp;
+
+<hr><hr>
+</span>
+<br/><br/><br/>
+       
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 9px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: hand;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+
+</head>
+<body onload="getCookie()">
+
+<html>
+    <body>
+<br /><br />
+ 
+         <center> <h1><b>Skills</b></h1>
+       <h3>Please Enter Your Skills!</h3>
+   </body>
+</html>       
+       
+<div class="container">
+  <form id="form" method="get" action="skilladded.html"/>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="skillname" name="skillname" placeholder="Enter Skill Name. . . " required>
+    
+    <label for="message">Details</label>
+    <textarea id="subject" name="subject" placeholder="Please describe your skills here.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Save Skill & Next" onclick="setCookie();" onsubmit="setCookie();">
+  </form>
+</div>
+
+<script> 
+
+function setCookie()
+{
+                    document.cookie = "skill=" + document.getElementById("skillname").value;
+                    
+}
+
+//script to make cookie elements populate into the form. Same is being used in the success page. 
+function getCookie()
+  {
+      var cookieArray = document.cookie.split("; ");
+        for(var i=0; i<cookieArray.length; i++)
+        {
+            var nameValueArray = cookieArray[i].split("=")
+                if (nameValueArray[0] == "skill") 
+                {
+                    document.getElementById("skillname").value = nameValueArray[1]
+                }
+                
+            
+        }
+  }
+
+
+
+</script> 
+
+
+</body>
+</html> 
+
