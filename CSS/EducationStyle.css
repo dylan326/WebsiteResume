@@ -1,0 +1,77 @@
+#uniName{
+	color: white;
+	text-align: center;
+}
+#collegeName{
+	color: white;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#majorRelated{
+	color: white;
+	text-align: center;
+	font-family: "Arial", Times, sans-serif;
+	background-color: grey;
+	padding: 0.25cm;
+	margin: 0cm;
+	width: 100vw;
+}
+
+#gpa{
+	color: black;
+}
+#courses{
+	text-align: left;
+	font-family: "Arial", Times, serif;
+	height: 100px;
+    width: 1000px;
+}
+.education{
+	color: white;
+	background-color: #57068c;
+	padding-top: 10px;
+	float: right;
+	width: 100vw;
+}
+
+.cycle-slideshow{
+	float: left;
+	position: relative;
+	bottom: 183px;
+	right: 7px;
+}
+
+img{
+	max-width:105px;
+	max-height: 105px;
+}
+
+.navbar {
+
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+/*height: 5%;*/
+margin-left:-10px;
+ padding-top: 17px;
+ text-align: Left;
+
+}
+
+.navbar a {
+	 font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	 font-size: 20px;
+	 text-decoration: none;
+   border-right-style: solid;
+   border-color:#D3D3D3;
+   padding-right: 10px;
+   border-left-style: solid;
+   padding-left: 10px;
+   margin-left: 5px;
+ color: #D3D3D3;
+
+
+}
