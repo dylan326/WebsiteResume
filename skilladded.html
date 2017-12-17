@@ -1,0 +1,47 @@
+<html>
+ <head>
+	<title>Congrats!</title>
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS\SkillsStyle.css">
+</head>
+    
+    <span class="navbar">
+        <a href= 'index.html'>Home</a>
+        &nbsp;
+        <a href= 'education.html'>Education</a>
+        &nbsp;
+        <a href='skills.html'>Skills</a>
+        &nbsp;   
+        <a href= 'contact.html'>Contact</a>
+        &nbsp;
+        <hr><hr>
+    </span>  
+    
+<body onload="getCookie()">    
+<br /><br /><br /><br />
+    <center> <h1><b>Congrats! </b></h1>
+    <p1>Your Skill Added Successfully Name: <p1 id="skillname"></p1> 
+    <br><br>
+    <p1>Do You Want to Add More Skills?</p1> 
+    <br><br>
+    <a  href="skills.html">  Click Here to Add More Skills..</a></p>
+   
+<script>
+
+function getCookie()
+  {
+      var cookieArray = document.cookie.split("; ");
+        for(var i=0; i<cookieArray.length; i++)
+        {
+            var nameValueArray = cookieArray[i].split("=")
+                if (nameValueArray[0] == "skill") 
+                {
+                    document.getElementById("skillname").innerHTML = nameValueArray[1]
+                }
+                
+        }
+  }
+
+
+</script>
+</html>
