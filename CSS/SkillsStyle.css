@@ -1,0 +1,65 @@
+  button {
+    border-style: solid;
+        border-color: black;
+        border-radius: 3px;
+        color: white;
+        background-color: #483D8B;
+    }
+    
+
+
+img {
+   
+    height: 85%;
+    width: 85%;
+     border-style: solid;
+     border-color: black;
+     border-radius: 3px;
+     margin-left: 90px;
+    
+}
+h4 {
+    display: inline;
+}
+
+.bio {
+    border-style: solid;
+    border-color: black;
+    background-color: #483D8B;
+    color: white;
+   padding: 2px;
+   border-radius: 3px;
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+/*height: 5%;*/
+margin-left:-10px;
+ padding-top: 17px;
+ text-align: left;
+ 
+
+}
+
+.navbar a {
+     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+     font-size: 20px;
+     text-decoration: none;
+   border-right-style: solid;
+   border-color:#D3D3D3;
+   padding-right: 10px;
+   border-left-style: solid;
+   padding-left: 10px;
+   margin-left: 5px;
+
+
+ color: #D3D3D3;
+
+
+}
